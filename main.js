@@ -21,10 +21,10 @@ async function getWeather(city){
     const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=40fc6f06cf77470888a140052232306&q=${city}`)
     const data = await response.json();
     city1.innerHTML = data.location.name;
-    humidity.innerHTML = data.current.humidity;
+    humidity.innerHTML = "Humdity: " + data.current.humidity;
     date.innerHTML = data.location.localtime.split(' ')[0];
     time.innerHTML = data.location.localtime.split(' ')[1];
-    degree.innerHTML = data.current.feelslike_c;
+    degree.innerHTML = data.current.feelslike_c + "° C";
     console.log(data)
 }
 //Promise Methode
@@ -33,10 +33,10 @@ function getWeather2(city) {
     .then(response => response.json())
     .then(data => {
         city1.innerHTML = data.location.name;
-        humidity.innerHTML = data.current.humidity;
+        humidity.innerHTML = "Humdity: " + data.current.humidity;
         date.innerHTML = data.location.localtime.split(' ')[0];
         time.innerHTML = data.location.localtime.split(' ')[1];
-        degree.innerHTML = data.current.feelslike_c;
+        degree.innerHTML = data.current.feelslike_c + "° C";
         console.log(data)
     })
 }

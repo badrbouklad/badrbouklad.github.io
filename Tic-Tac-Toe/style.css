@@ -10,33 +10,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.div{
-    border: 1px solid aqua;
-}
-.container{
-    border: 2px solid aqua;
-    border-radius: 25px;
-    height: 30rem;
-    width: 30rem;
-    display: grid;
-    padding: 70px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-.cell1, .cell2, .cell3{
-    border-top: none;
-    font-size: 32px;
-}
-.cell3, .cell6, .cell9{
-    border-right: none;
-    font-size: 32px;
-}
-.cell1, .cell4, .cell7{
-    border-left: none;
-    font-size: 32px;
-}
-.cell7, .cell8, .cell9{
-    border-bottom: none;
-    font-size: 32px;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
 }

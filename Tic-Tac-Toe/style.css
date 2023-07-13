@@ -26,13 +26,17 @@ section{
 }
 .cell1, .cell2, .cell3{
     border-top: none;
+    font-size: 32px;
 }
 .cell3, .cell6, .cell9{
     border-right: none;
+    font-size: 32px;
 }
 .cell1, .cell4, .cell7{
     border-left: none;
+    font-size: 32px;
 }
 .cell7, .cell8, .cell9{
     border-bottom: none;
+    font-size: 32px;
 }

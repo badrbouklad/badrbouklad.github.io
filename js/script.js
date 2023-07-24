@@ -12,3 +12,24 @@ obj2.name = 'Jane'; // Changing obj2 also affects obj1
 
 console.log(obj1.name); // Output: "Jane"
 console.log(obj2.name); // Output: "Jane"
+
+
+/*------------------------------------------------------------------------------*/
+
+
+const btn = document.getElementById('#btn');
+window.onscroll = function () {
+  if (scrollY >= 10)
+    btn.style.display = 'block'
+  else
+    btn.style.display = 'none'
+
+}
+
+btn.onclick = function () {
+  window.scrollTo({
+    left:0,
+    top:0,
+    behavior: 'smooth'
+})
+}

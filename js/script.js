@@ -19,7 +19,7 @@ console.log(obj2.name); // Output: "Jane"
 
 const btn = document.getElementById('#btn');
 window.onscroll = function () {
-  if (scrollY >= 10)
+  if (scrollY > 10)
     btn.style.display = 'block'
   else
     btn.style.display = 'none'
